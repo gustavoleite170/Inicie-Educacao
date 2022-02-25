@@ -1,0 +1,40 @@
+/*==============General===============*/
+
+.header__logo-img {
+  max-height: 50px;
+}
+
+#header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 20px 25px;
+  background-color: var(--ice-white);
+  border-bottom: 1px solid var() ;
+}
+
+/*==============General===============*/
+
+/*==============Left-Side===============*/
+
+.header__left-side {
+  display: flex;
+  gap: 30px;
+}
+
+.header__logo {
+  display: flex;
+  cursor: pointer;
+}
+
+.header__menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header__menu__link {
+  cursor: pointer;
+}
+
+/*==============Left-Side===============*/
