@@ -94,9 +94,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 36px;
-  width: 36px;
+  font-size: 20px;
+  color: #fbfbfb;
+  padding: 18px;
+  height: 0px;
+  width: 0px;
   border-radius: 50%;
+  transition: transform 2s;
 }
 
 .header__socials__shape:nth-child(1) {
@@ -115,14 +119,8 @@
   background-color: rgb(255, 0, 0);
 }
 
-.header__socials__shape > div {
-  font-size: 20px;
-  color: #fbfbfb;
-}
-
-.header__socials__shape > div::before {
-  align-self: center;
-  height: 20px;
+.header__socials__shape:hover::before {
+  transform: rotateY(180deg);
 }
 
 /*==============Right-Side===============*/
