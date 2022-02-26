@@ -116,8 +116,13 @@
 }
 
 .header__socials__shape > div {
-  font-size: 24px;
+  font-size: 20px;
   color: #fbfbfb;
+}
+
+.header__socials__shape > div::before {
+  align-self: center;
+  height: 20px;
 }
 
 /*==============Right-Side===============*/
