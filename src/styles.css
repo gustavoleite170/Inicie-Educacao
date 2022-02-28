@@ -22,3 +22,8 @@ a {
   --text-gray: hsl(0, 0%, 46%, 1);
   /*================COLORS=================*/
 }
+
+.max-width-1200px {
+  max-width: 1200px;
+  margin: 0 auto;
+}

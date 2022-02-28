@@ -9,13 +9,15 @@ import { HeaderComponent } from './components/template/header/header.component';
 /*=================Material-Imports=================*/
 
 import {MatIconModule} from '@angular/material/icon';
+import { FooterComponent } from './components/template/footer/footer.component';
 
 /*=================Material-Imports=================*/
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
