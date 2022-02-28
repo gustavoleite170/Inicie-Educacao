@@ -4,11 +4,32 @@
 
 img {
   width: 160px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+h2 {
+  font: 700 26px 'Open Sans', sans-serif;
+}
+
+nav a {
+  font: 400 17px 'Open Sans', sans-serif;
+  padding: 8px 0;
+  cursor: pointer;
+  transition: color 0.5s;
+}
+
+nav a:hover {
+  color: #233674;
+}
+
+.footer__logo-phrase {
+  margin-bottom: 20px;
 }
 
 .footer__logo-phrase,
 .footer__contact {
-  font: 400 16px 'Open Sans', sans-serif;
+  font: 500 16px/25.6px 'Open Sans', sans-serif;
 }
 
 .footer {
@@ -49,4 +70,5 @@ img {
 .footer__copyrights {
   width: 100%;
   text-align: center;
+  font: 400 12px 'Open Sans', sans-serif;
 }
