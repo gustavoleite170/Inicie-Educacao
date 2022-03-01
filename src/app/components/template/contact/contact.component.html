@@ -1,16 +1,44 @@
 <main class="max-width-1200px">
-  <div class="contact"></div>
-  <div class="contact__call"></div>
+  <div class="contact">Contato</div>
+  <div class="contact__call">Inicie sua transformação</div>
   <form action="" class="contact__form">
     <section class="contact__form__box">
-      <input type="text" placeholder="Nome" /><select name="" id=""></select
+      <input type="text" placeholder="Nome" /><select name="charge" id="charge">
+        <option value="charge">Cargo</option>
+        <option value="director">Diretor(a)</option>
+        <option value="mainteiner">Mantenedor(a)</option>
+        <option value="coordinator">Dir. / Coord. Pedagógico</option>
+        <option value="marketing">Profissional de Marketing</option>
+        <option value="it">Profissional de TI</option>
+        <option value="teacher">Professor(a)</option>
+        <option value="student">Aluno(a)</option>
+        <option value="other">Outro</option></select
       ><input type="text" placeholder="Telefone" /><input
         type="text"
         placeholder="E-mail"
-      /><select name="" id=""></select
-      ><select name="" id=""></select>
+      /><select name="topic" id="topic">
+        <option value="topic">Assunto</option>
+        <option value="comercial">Comercial</option>
+        <option value="human-resources">Recursos Humanos</option>
+        <option value="financial">Financeiro</option>
+        <option value="tech-support">Técnico / Suporte</option>
+        <option value="pedagogic-support">Pedagógico / Suporte</option>
+        <option value="other"></option>
+        Outro</select
+      ><select name="is-inicie" id="is-inicie">
+        <option value="are-you">É cliente inicie?</option>
+        <option value="yes">Sim</option>
+        <option value="no">Não</option>
+      </select>
     </section>
-    <div class="contact__message"></div>
+    <textarea
+      name="contact"
+      id="contact__message"
+      rows="5"
+      cols="50"
+      class="contact__message"
+      aria-required="true"
+    ></textarea>
   </form>
 
   <div class="captcha"></div>

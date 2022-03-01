@@ -85,6 +85,10 @@
   border-radius: 5px;
 }
 
+input.header__search-box__input:focus {
+  outline: none;
+}
+
 .header__socials {
   display: flex;
   gap: 6px;
