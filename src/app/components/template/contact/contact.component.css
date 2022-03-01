@@ -18,7 +18,7 @@ textarea {
 
 .max-width-1200px {
   max-width: 600px;
-  padding: 60px 0px;
+  padding: 70px 0px 85px;
 }
 
 .contact {
@@ -53,4 +53,30 @@ textarea {
 
 .captcha {
   margin-bottom: 20px;
+}
+
+.contact__save {
+  width: auto;
+  font: 400 15px 'Open Sans', Sans-serif;
+  height: auto;
+  text-align: center;
+  background: #ea6538;
+  border-width: 1px;
+  border-color: #ea6538;
+  border-style: solid;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 4px;
+  text-shadow: none;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  box-shadow: 0 1px 1px #eeeeee;
+  margin: 10px 0;
+  vertical-align: middle;
+}
+
+.contact__save:hover {
+  background: #233674;
+  border-color: #233674;
+  color: #ffffff;
 }
