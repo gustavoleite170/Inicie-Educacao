@@ -38,9 +38,65 @@
       cols="50"
       class="contact__message"
       aria-required="true"
+      placeholder="Mensagem"
     ></textarea>
   </form>
 
-  <div class="captcha"></div>
+  <div class="captcha">
+    <div
+      id="frm_field_9_container"
+      class="frm_form_field form-field frm_none_container"
+      bis_skin_checked="1"
+    >
+      <label
+        for="g-recaptcha-response"
+        id="field_recaptcha_label"
+        class="frm_primary_label"
+      >
+        <span class="frm_required" aria-hidden="true"></span>
+      </label>
+      <div
+        id="field_recaptcha"
+        class="frm-g-recaptcha"
+        data-sitekey="6LdUBk4bAAAAAKUPbjTkdX342Laq4dOHO4vDH4F6"
+        data-size="normal"
+        data-theme="light"
+        data-rid="0"
+        bis_skin_checked="1"
+      >
+        <div style="width: 304px; height: 78px" bis_skin_checked="1">
+          <div bis_skin_checked="1">
+            <iframe
+              title="reCAPTCHA"
+              src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LdUBk4bAAAAAKUPbjTkdX342Laq4dOHO4vDH4F6&amp;co=aHR0cHM6Ly9pbmljaWUuZGlnaXRhbDo0NDM.&amp;hl=pt-BR&amp;v=PdoyIVkd8v16xl_NMp3H0N1Y&amp;theme=light&amp;size=normal&amp;cb=79ummi4t7e88"
+              width="304"
+              height="78"
+              role="presentation"
+              name="a-1jqgwvqduscv"
+              frameborder="0"
+              scrolling="no"
+              sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"
+              bis_size='{"x":981,"y":7808,"w":304,"h":78,"abs_x":981,"abs_y":7808}'
+            ></iframe>
+          </div>
+          <textarea
+            id="g-recaptcha-response"
+            name="g-recaptcha-response"
+            class="g-recaptcha-response"
+            style="
+              width: 250px;
+              height: 40px;
+              border: 1px solid rgb(193, 193, 193);
+              margin: 10px 25px;
+              padding: 0px;
+              resize: none;
+              display: none;
+            "
+          ></textarea>
+        </div>
+        <iframe style="display: none"></iframe>
+      </div>
+    </div>
+  </div>
   <button class="contact__save"></button>
 </main>

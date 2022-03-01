@@ -1,18 +1,37 @@
 *:focus {
   outline: none !important;
-  /* box-shadow: 0 0 10px #719ece; */
+  box-shadow: 0 0 10px #719ece;
 }
 
-input,
-select {
+form > section > input,
+select,
+textarea {
   height: 40px;
   line-height: 20.8px;
   padding: 6px 10px;
-  border-color: #bfc3c8;
+  border: solid 1px #bfc3c8;
   border-radius: 0px;
+  font: 400 15px 'Open Sans', Sans-serif;
   color: #555555;
-  border-width: 1px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+}
+
+.max-width-1200px {
+  max-width: 600px;
+  padding: 60px 0px;
+}
+
+.contact {
+  text-align: center;
+  width: 100%;
+  font: 400 17px 'Open Sans', Sans-serif;
+  color: #ea6538;
+}
+
+.contact__call {
+  text-align: center;
+  font: 800 39px 'Open Sans', Sans-serif;
+  margin-bottom: 20px;
 }
 
 .contact__form__box {
@@ -20,8 +39,18 @@ select {
   row-gap: 20px;
   column-gap: 2%;
   grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 20px;
 }
 
-.max-width-1200px {
-  max-width: 600px;
+.contact__message {
+  overflow: hidden;
+  width: 100% !important;
+  height: auto;
+  font: 400 15px 'Open Sans', Sans-serif;
+  padding: 10px 10px;
+  margin-bottom: 20px;
+}
+
+.captcha {
+  margin-bottom: 20px;
 }
