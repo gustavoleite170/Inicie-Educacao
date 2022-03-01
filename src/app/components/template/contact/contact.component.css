@@ -2,3 +2,26 @@
   outline: none !important;
   /* box-shadow: 0 0 10px #719ece; */
 }
+
+input,
+select {
+  height: 40px;
+  line-height: 20.8px;
+  padding: 6px 10px;
+  border-color: #bfc3c8;
+  border-radius: 0px;
+  color: #555555;
+  border-width: 1px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+}
+
+.contact__form__box {
+  display: grid;
+  row-gap: 20px;
+  column-gap: 2%;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.max-width-1200px {
+  max-width: 600px;
+}
