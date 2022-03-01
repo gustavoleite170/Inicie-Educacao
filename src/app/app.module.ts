@@ -10,6 +10,7 @@ import { HeaderComponent } from './components/template/header/header.component';
 
 import {MatIconModule} from '@angular/material/icon';
 import { FooterComponent } from './components/template/footer/footer.component';
+import { ContactComponent } from './components/template/contact/contact.component';
 
 /*=================Material-Imports=================*/
 
@@ -17,7 +18,8 @@ import { FooterComponent } from './components/template/footer/footer.component';
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
