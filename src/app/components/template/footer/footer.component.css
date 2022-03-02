@@ -23,6 +23,13 @@ nav a:hover {
   color: #233674;
 }
 
+@media (hover: hover) {
+  #header li:hover::after {
+    visibility: visible;
+    width: 100%;
+  }
+} /* To prevent bugs on mobile devices when touching menu options*/
+
 .footer__logo-phrase {
   margin-bottom: 20px;
 }
