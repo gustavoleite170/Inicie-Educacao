@@ -78,14 +78,9 @@ p {
   transition: all 0.5s;
 }
 
-.presentation__briefing__submission button:hover {
-  background-color: #233674;
-}
-
 @media (hover: hover) {
-  #header li:hover::after {
-    visibility: visible;
-    width: 100%;
+  .presentation__briefing__submission button:hover {
+    background-color: #233674;
   }
 } /* To prevent bugs on mobile devices when touching menu options*/
 
