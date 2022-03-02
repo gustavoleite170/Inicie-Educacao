@@ -2,6 +2,13 @@ section {
   padding: 90px 0;
 }
 
+h2,
+p {
+  margin: 0;
+}
+
+/*===========1__PRESENTATION===========*/
+
 .presentation.max-width-1200px {
   display: flex;
   flex-direction: column;
@@ -10,6 +17,34 @@ section {
 
 .presentation__briefing {
   padding-bottom: 28px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.presentation__briefing__form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+  flex-basis: 45.983%;
+}
+.presentation__briefing__image {
+  padding: 10px;
+  flex-basis: 54.017%;
+}
+
+.presentation__briefing__title {
+  color: #233674;
+  font: 800 48px/1.2 'Open Sans', sans-serif;
+}
+
+.presentation__briefing__body-text {
+  color: #828282;
+  font: 400 25px/1.2 'Open Sans', sans-serif;
+}
+
+.presentation__briefing__image > img {
+  width: 100%;
 }
 
 .presentation__client-numbers {
@@ -25,3 +60,5 @@ section {
   font: 700 19px/19.2px 'Open Sans', sans-serif;
   color: #303030;
 }
+
+/*===========1__PRESENTATION===========*/
