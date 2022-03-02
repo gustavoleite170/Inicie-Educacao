@@ -19,14 +19,9 @@ nav a {
   transition: color 0.5s;
 }
 
-nav a:hover {
-  color: #233674;
-}
-
 @media (hover: hover) {
-  nav a:hover::after {
-    visibility: visible;
-    width: 100%;
+  nav a:hover {
+    color: #233674;
   }
 } /* To prevent bugs on mobile devices when touching menu options*/
 
