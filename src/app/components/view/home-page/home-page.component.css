@@ -44,6 +44,44 @@ p {
   font: 400 25px/1.2 'Open Sans', sans-serif;
 }
 
+.presentation__briefing__submission {
+  align-self: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  gap: 10px;
+}
+
+.presentation__briefing__submission input {
+  width: 100%;
+  max-width: 100%;
+  border: 1px solid #818a91;
+  background-color: transparent;
+  color: #373a3c;
+  font: 400 15px/1.4 'Open Sans', sans-serif;
+  min-height: 40px;
+  padding: 5px 14px;
+  border-radius: 3px;
+  outline: none;
+}
+
+.presentation__briefing__submission button {
+  width: 100%;
+  background-color: #00a650;
+  color: #ffffff;
+  font: 700 15px/1.4 'Open Sans', sans-serif;
+  border: solid 0 #ffffff;
+  border-radius: 3px;
+  padding: 15px 32px 15px 32px;
+  text-decoration: none;
+  outline: none;
+  transition: all 0.5s;
+}
+
+.presentation__briefing__submission button:hover {
+  background-color: #233674;
+}
+
 .presentation__briefing__image > img {
   width: 100%;
 }
