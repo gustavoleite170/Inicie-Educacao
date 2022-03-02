@@ -24,7 +24,7 @@ nav a:hover {
 }
 
 @media (hover: hover) {
-  #header li:hover::after {
+  nav a:hover::after {
     visibility: visible;
     width: 100%;
   }
