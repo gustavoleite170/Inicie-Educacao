@@ -26,6 +26,7 @@ p {
   flex-direction: column;
   gap: 20px;
   padding: 10px;
+  margin-bottom: 10px;
   flex-basis: 45.983%;
 }
 .presentation__briefing__image {
