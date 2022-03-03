@@ -106,4 +106,34 @@ p {
 
 /*===========2__PLATFORM===========*/
 
-/*===========2__PLATFORM===========*/
+.platform {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  overflow: hidden;
+}
+
+.platform__briefing-and-call {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.platform__briefing-and-call__image {
+  max-width: 300px;
+}
+
+.platform__title {
+  color: #233674;
+  font: 800 48px/1.2 'Open Sans', Sans-serif;
+}
+
+.platform__brief-explanation {
+  color: #5f6368;
+  font: 400 17px/1.8 'Open Sans', Sans-serif;
+}
+
+.platform__icon-3 {
+  max-width: 146px;
+}
+
+/*===========2__PLATFORM===========*/ ;
