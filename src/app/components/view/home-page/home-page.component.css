@@ -157,7 +157,7 @@ p {
 }
 
 @media (hover: hover) {
-  .presentation__briefing__submission button:hover {
+  .platform__meet-us-button:hover {
     background-color: #233674;
   }
 } /* To prevent bugs on mobile devices when touching menu options*/
