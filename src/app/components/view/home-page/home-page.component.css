@@ -176,4 +176,41 @@ p {
   display: flex;
 }
 
+.numbers__images,
+.numbers__statistics {
+  flex-basis: 1;
+  position: relative;
+}
+
+.numbers__images__wrapper {
+  width: 570px;
+  position: relative;
+}
+
+.numbers__images__1 {
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  transform: rotate(-7deg);
+}
+
+.numbers__images__2 {
+  position: absolute;
+  right: 15px;
+  bottom: -160px;
+  border-radius: 5px;
+  overflow: hidden;
+  transform: rotate(7deg);
+}
+
+.numbers__images__ball {
+  position: absolute;
+  left: 0px;
+  top: 50px;
+  width: 470px;
+  height: 470px;
+  border-radius: 50%;
+  background-color: #233674;
+}
+
 /*===========3__NUMBERS===========*/
