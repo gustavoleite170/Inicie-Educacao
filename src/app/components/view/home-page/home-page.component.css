@@ -136,4 +136,36 @@ p {
   max-width: 146px;
 }
 
+.platform__icons-1-and-2 {
+  display: flex;
+}
+
+.platform__icon-1,
+.platform__icon-2 {
+  flex-grow: 1;
+}
+
+.platform__meet-us-button {
+  width: 126.2px;
+  background-color: #ea6538;
+  font: 700 15px/1 'Open Sans', sans-serif;
+  color: #ffffff;
+  border-radius: 3px;
+  padding: 20px 32px;
+  margin-top: 10px;
+  transition: all 0.5s;
+}
+
+@media (hover: hover) {
+  .presentation__briefing__submission button:hover {
+    background-color: #233674;
+  }
+} /* To prevent bugs on mobile devices when touching menu options*/
+
+.platform__image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /*===========2__PLATFORM===========*/ ;
