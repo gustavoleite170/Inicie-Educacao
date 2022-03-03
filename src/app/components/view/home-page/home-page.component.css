@@ -260,4 +260,87 @@ p {
 
 /*===========4__ABOUT-US===========*/
 
+.about-us {
+  display: flex;
+}
+
+.about-us__briefing {
+  flex-basis: 58.33%;
+  padding: 0 15px;
+}
+
+.about-us__images {
+  flex-basis: 41.67%;
+  padding: 0 15px;
+}
+
+.about-us__briefing__little-title {
+  position: relative;
+  color: #e8532c;
+  font: 400 16px/1.7 'Open Sans', sans-serif;
+}
+
+.about-us__briefing__box {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.about-us__briefing__title {
+  color: #303030;
+  font: 800 48px/1.2 'Open Sans', Sans-serif;
+}
+
+.about-us__briefing__explanation {
+  position: relative;
+  color: #06092d;
+  font: 400 20px/1.7 'Open Sans', sans-serif;
+}
+
+.about-us__briefing__explanation br {
+  margin: -2px;
+}
+
+.about-us__briefing__meet-us-button {
+  width: 126.2px;
+  background-color: #ea6538;
+  font: 700 15px/1 'Open Sans', sans-serif;
+  color: #ffffff;
+  border-radius: 3px;
+  padding: 20px 32px;
+  margin-top: 10px;
+  transition: all 0.5s;
+}
+
+@media (hover: hover) {
+  .about-us__briefing__meet-us-button:hover {
+    background-color: #233674;
+  }
+} /* To prevent bugs on mobile devices when touching menu options*/
+
+.about-us__images {
+  position: relative;
+  padding-left: 45px;
+  display: flex;
+  justify-content: center;
+}
+
+.about-us__images__ball {
+  position: absolute;
+  right: -30px;
+  top: -20px;
+  width: 520px;
+  height: 520px;
+  border-radius: 50%;
+  background-color: rgb(130 47 135 / 80%);
+  box-sizing: border-box;
+}
+
+.about-us__images__1 {
+  position: relative;
+  top: -20px;
+  right: -10px;
+  width: 400px;
+  height: 524px;
+}
 /*===========4__ABOUT-US===========*/
