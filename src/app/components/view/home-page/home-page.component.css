@@ -168,4 +168,12 @@ p {
   justify-content: center;
 }
 
-/*===========2__PLATFORM===========*/ ;
+/*===========2__PLATFORM===========*/
+
+/*===========3__NUMBERS===========*/
+
+.numbers {
+  display: flex;
+}
+
+/*===========3__NUMBERS===========*/
