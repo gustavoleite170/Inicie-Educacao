@@ -344,3 +344,33 @@ p {
   height: 524px;
 }
 /*===========4__ABOUT-US===========*/
+
+/*===========5__TESTIMONIALS===========*/
+
+.testimonials {
+  background-color: #f7f7f7;
+}
+
+.testimonials__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonials__costumer {
+  color: #e8532c;
+  font: 400 16px/1.7 'Open Sans', sans-serif;
+}
+.testimonials__title {
+  color: #303030;
+  font: 800 48px/1.2 'Open Sans', sans-serif;
+}
+
+.testimonials__subtitle {
+  margin-top: 25px;
+  position: relative;
+  color: #06092d;
+  font: 400 20px/1.7 'Open Sans', sans-serif;
+}
+
+/*===========5__TESTIMONIALS===========*/
