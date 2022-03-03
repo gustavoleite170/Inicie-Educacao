@@ -173,18 +173,28 @@ p {
 /*===========3__NUMBERS===========*/
 
 .numbers {
+  background-color: #f7f7f7;
+}
+
+.numbers__ {
   display: flex;
 }
 
 .numbers__images,
 .numbers__statistics {
-  flex-basis: 1;
+  flex-grow: 1;
   position: relative;
+  padding: 0 15px;
 }
 
 .numbers__images__wrapper {
   width: 570px;
   position: relative;
+}
+
+.numbers__statistics__wrapper {
+  padding: 0 15px;
+  margin-bottom: 40px;
 }
 
 .numbers__images__1 {
@@ -211,6 +221,39 @@ p {
   height: 470px;
   border-radius: 50%;
   background-color: #233674;
+}
+
+.numbers__statistics__little-title {
+  position: relative;
+  color: #e8532c;
+  font: 400 16px/1.7 'Open Sans', sans-serif;
+}
+
+.numbers__statistics__title {
+  color: #303030;
+  font: 800 48px/1.2 'Open Sans', Sans-serif;
+  margin-bottom: 55px;
+}
+
+.numbers__statistics__info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 40px;
+  column-gap: 30px;
+}
+
+.numbers__statistics__info__cards h2 {
+  font: 800 40px/1 'Open Sans', sans-serif;
+  position: relative;
+  font-weight: 800;
+  color: #06092d;
+}
+
+.numbers__statistics__info__cards p {
+  position: relative;
+  font: 700 19px/1.6 'Open Sans', sans-serif;
+  margin-top: 14px;
+  color: #06092d;
 }
 
 /*===========3__NUMBERS===========*/
