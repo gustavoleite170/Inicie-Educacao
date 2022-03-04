@@ -6,13 +6,12 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './components/template/header/header.component';
 
-
 import {MatIconModule} from '@angular/material/icon';
 import { FooterComponent } from './components/template/footer/footer.component';
 import { ContactComponent } from './components/template/contact/contact.component';
 import { HomePageComponent } from './components/view/home-page/home-page.component';
+import { CarrousselModule } from './components/view/home-page/carroussel/carroussel.module';
 
-import { SwiperModule } from 'swiper/angular';
 
 @NgModule({
   declarations: [
@@ -27,7 +26,8 @@ import { SwiperModule } from 'swiper/angular';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatIconModule,
-    SwiperModule
+    CarrousselModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
