@@ -10,7 +10,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './components/template/header/header.component';
 import { FooterComponent } from './components/template/footer/footer.component';
 import { ContactComponent } from './components/template/contact/contact.component';
-import { HomePageComponent } from './components/view/home-page/home-page.component';
+import { HomePageModule } from './components/view/home-page/home-page.module';
 
 
 
@@ -19,14 +19,14 @@ import { HomePageComponent } from './components/view/home-page/home-page.compone
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    ContactComponent,
-    HomePageComponent
+    ContactComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    SwiperModule
+    HomePageModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
