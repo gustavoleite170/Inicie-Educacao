@@ -374,6 +374,14 @@ p {
   font: 400 20px/1.7 'Open Sans', sans-serif;
 }
 
+.testimonials__carroussel {
+  width: 100%;
+}
+
+swiper {
+  width: 100%;
+}
+
 .testimonials__carroussel__slides {
   position: relative;
   padding: 45px 25px 50px;
