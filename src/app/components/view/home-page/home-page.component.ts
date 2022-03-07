@@ -12,7 +12,8 @@ import SwiperCore, {
   Zoom,
   Autoplay,
   Thumbs,
-  Controller
+  Controller, 
+  Keyboard
 } from "swiper";
 import { BehaviorSubject } from "rxjs";
 
@@ -26,7 +27,9 @@ SwiperCore.use([
   Zoom,
   Autoplay,
   Thumbs,
-  Controller
+  Controller,
+  Keyboard
+
 ]);
 
 @Component({
@@ -54,58 +57,27 @@ export class HomePageComponent implements OnInit {
   slidesPerView: number = 4;
   pagination: any = false;
 
-  slides2 = ["slide 1", "slide 2", "slide 3"];
-  replaceSlides() {
-    this.slides2 = ["foo", "bar"];
+  keyboard= {
+    enabled: true,
+    onlyInViewport: false,
   }
 
-  togglePagination() {
-    if (!this.pagination) {
-      this.pagination = { type: "fraction" };
-    } else {
-      this.pagination = false;
-    }
-  }
+  
 
-  navigation = false;
-  toggleNavigation() {
-    this.navigation = !this.navigation;
-  }
+  
 
-  scrollbar: any = false;
-  toggleScrollbar() {
-    if (!this.scrollbar) {
-      this.scrollbar = { draggable: true };
-    } else {
-      this.scrollbar = false;
-    }
-  }
-  breakpoints = {
-    640: { slidesPerView: 2, spaceBetween: 20 },
-    768: { slidesPerView: 4, spaceBetween: 40 },
-    1024: { slidesPerView: 4, spaceBetween: 50 }
-  };
+  
 
-  slides = Array.from({ length: 5 }).map((el, index) => `Slide ${index + 1}`);
-  virtualSlides = Array.from({ length: 600 }).map(
-    (el, index) => `Slide ${index + 1}`
-  );
+  
+  
 
-  log(log: string) {
-    // console.log(string);
-  }
+  
+
+  
 
 
-  slidesEx = ["first", "second"];
+  
 
-  onSlideChange(swiper: any) {
-    if (swiper.isEnd) {
-      // all swiper events are run outside of ngzone, so use ngzone.run or detectChanges to update the view.
-      this.ngZone.run(() => {
-        this.slidesEx = [...this.slidesEx, `added ${this.slidesEx.length - 1}`];
-      });
-      console.log(this.slidesEx);
-    }
-  }
+  
 
 }

@@ -28,3 +28,21 @@ a {
   max-width: 1200px;
   margin: 0 auto;
 }
+
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+}
+
+.swiper .swiper-pagination-bullet-active {
+  background-color: #ea6538;
+}
+
+.swiper .swiper-pagination-bullets .swiper-pagination-bullet {
+  height: 0.75rem;
+  width: 0.75rem;
+}

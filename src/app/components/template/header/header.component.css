@@ -146,4 +146,16 @@ input.header__search-box__input:focus {
   background-color: rgb(255, 0, 0);
 }
 
+.header__lang {
+  height: 44px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.header__lang__flag img {
+  width: 25px;
+  height: auto;
+}
+
 /*==============Right-Side===============*/

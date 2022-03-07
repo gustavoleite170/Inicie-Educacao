@@ -176,7 +176,13 @@
       Veja por que nossos clientes confiam na Inicie Educação
     </p>
     <div class="testimonials__carroussel">
-      <swiper [slidesPerView]="2" [spaceBetween]="50">
+      <swiper
+        [slidesPerView]="2"
+        [spaceBetween]="30"
+        [pagination]="{ clickable: true }"
+        [loop]="true"
+        [keyboard]="true"
+      >
         <ng-template swiperSlide>
           <div class="testimonials__carroussel__slides">
             <div class="testimonials__carroussel__slides__testimony">

@@ -374,14 +374,6 @@ p {
   font: 400 20px/1.7 'Open Sans', sans-serif;
 }
 
-.testimonials__carroussel {
-  width: 100%;
-}
-
-swiper {
-  width: 100%;
-}
-
 .testimonials__carroussel__slides {
   position: relative;
   padding: 45px 25px 50px;
@@ -400,6 +392,7 @@ swiper {
   background-color: #ffffff;
   transform: skewY(2deg);
   box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
+  min-height: 310px;
 }
 
 .testimonials__carroussel__slides__testimony-text {
@@ -450,6 +443,19 @@ swiper {
 
 .testimonials__carroussel__slides__quotes-mark {
   width: 100%;
+}
+
+.testimonials__carroussel {
+  width: calc(100% + 40px);
+}
+
+swiper {
+  width: 100%;
+  padding: 50px 20px;
+}
+
+ng-template {
+  margin-left: 10px;
 }
 
 /*===========SECTION-5__TESTIMONIALS===========*/
