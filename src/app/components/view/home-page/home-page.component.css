@@ -3,6 +3,7 @@ section {
 }
 
 h2,
+h3,
 p {
   margin: 0;
 }
@@ -464,39 +465,101 @@ ng-template {
 
 .cases {
   display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 90px 80px;
 }
 
-.cases__briefing {
+.cases__header {
   flex-basis: 58.33%;
   padding: 0 15px;
+  text-align: center;
 }
 
-.cases__images {
-  flex-basis: 41.67%;
-  padding: 0 15px;
-}
-
-.cases__briefing__little-title {
+.cases__header__little-title {
   position: relative;
   color: #e8532c;
   font: 400 16px/1.7 'Open Sans', sans-serif;
 }
 
-.cases__briefing__box {
+.cases__header__box {
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
 
-.cases__briefing__title {
+.cases__header__title {
   color: #303030;
   font: 800 48px/1.2 'Open Sans', Sans-serif;
 }
 
-.cases__briefing__explanation {
+.cases__header__explanation {
   position: relative;
   color: #06092d;
   font: 400 20px/1.7 'Open Sans', sans-serif;
 }
+
+.cases__images__wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 10px;
+  row-gap: 20px;
+}
+
+.cases__images__photo {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.cases__images__photo__text-box {
+  position: absolute;
+  top: 0;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  padding: 0 15px;
+  width: 100%;
+  height: 100%;
+  background-color: #ea6538;
+  opacity: 0%;
+  transition: opacity 0.5s;
+  z-index: 2;
+}
+
+.cases__images__photo:hover > .cases__images__photo__text-box {
+  opacity: 100%;
+}
+
+.cases__images__photo__text {
+  font: 700 22px/1.2 'Open Sans', sans-serif;
+  color: #233674;
+}
+
+.cases__images__photo__ {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cases__meet-us-button {
+  width: 205.2px;
+  align-self: center;
+  background-color: #ffffff;
+  font: 700 15px/1 'Open Sans', sans-serif;
+  color: #ea6538;
+  border-radius: 3px;
+  border: solid 2px #ea6538;
+  padding: 15px 32px;
+  margin-top: 10px;
+  transition: all 0.5s;
+}
+
+@media (hover: hover) {
+  .cases__meet-us-button:hover {
+    background-color: #ea6538;
+    color: #ffffff;
+  }
+} /* To prevent bugs on mobile devices when touching menu options*/
 
 /*===========SECTION-6__CASES===========*/
