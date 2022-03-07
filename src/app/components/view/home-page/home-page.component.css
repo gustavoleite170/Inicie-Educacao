@@ -640,3 +640,14 @@ ng-template {
 }
 
 /*===========SECTION-8__PARTNERS===========*/
+
+/*===========SECTION-9__BLOG===========*/
+
+.blog {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 90px 80px;
+}
+
+/*===========SECTION-9__BLOG===========*/
