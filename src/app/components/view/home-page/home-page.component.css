@@ -563,3 +563,39 @@ ng-template {
 } /* To prevent bugs on mobile devices when touching menu options*/
 
 /*===========SECTION-6__CASES===========*/
+
+.clients {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 90px 80px;
+}
+
+.clients__header {
+  flex-basis: 58.33%;
+  padding: 0 15px;
+  text-align: center;
+}
+
+.clients__header__little-title {
+  position: relative;
+  color: #e8532c;
+  font: 400 16px/1.7 'Open Sans', sans-serif;
+}
+
+.clients__header__box {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.clients__header__title {
+  color: #303030;
+  font: 800 48px/1.2 'Open Sans', Sans-serif;
+}
+
+.clients__header__explanation {
+  position: relative;
+  color: #06092d;
+  font: 400 20px/1.7 'Open Sans', sans-serif;
+}
