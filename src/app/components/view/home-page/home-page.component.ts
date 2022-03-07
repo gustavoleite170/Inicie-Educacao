@@ -46,10 +46,9 @@ export class HomePageComponent implements OnInit {
   constructor(private cd: ChangeDetectorRef, private ngZone: NgZone) {}
   ngOnInit() {}
 
-  getSlides() {
-    this.slides$.next(
-      Array.from({ length: 600 }).map((el, index) => `Slide ${index + 1}`)
-    );
+  navigation = false;
+  toggleNavigation() {
+    this.navigation = !this.navigation;
   }
 
   indexNumber = 1;

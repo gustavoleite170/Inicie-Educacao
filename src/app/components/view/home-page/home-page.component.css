@@ -579,12 +579,6 @@ ng-template {
   text-align: center;
 }
 
-.clients__header__little-title {
-  position: relative;
-  color: #e8532c;
-  font: 400 16px/1.7 'Open Sans', sans-serif;
-}
-
 .clients__header__box {
   display: flex;
   flex-direction: column;
@@ -610,3 +604,39 @@ ng-template {
 }
 
 /*===========SECTION-7__CLIENTS===========*/
+
+/*===========SECTION-8__PARTNERS===========*/
+
+.partners {
+  background-color: #f7f7f7;
+}
+
+.partners__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.partners__header__title {
+  color: #303030;
+  font: 800 48px/1.2 'Open Sans', Sans-serif;
+  text-align: center;
+}
+
+.partners__link {
+  width: 300px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.partners__logo {
+  width: 100%;
+}
+
+.partners__swiper__wrapper {
+  padding: 0 150px;
+}
+
+/*===========SECTION-8__PARTNERS===========*/

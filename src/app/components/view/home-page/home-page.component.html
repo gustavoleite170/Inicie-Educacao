@@ -662,3 +662,45 @@
     </swiper>
   </div>
 </section>
+
+<section class="partners">
+  <div class="partners__wrapper max-width-1200px">
+    <div class="partners__header">
+      <div class="partners__header__box">
+        <h2 class="partners__header__title">Parceiros</h2>
+      </div>
+    </div>
+    <div class="partners__swiper__wrapper">
+      <swiper
+        [slidesPerView]="2"
+        [spaceBetween]="260"
+        [pagination]="{ clickable: true }"
+        [loop]="true"
+        [keyboard]="true"
+      >
+        <ng-template swiperSlide
+          ><a
+            type="button"
+            href="https://edu.google.com/intl/ALL_br/"
+            class="partners__link"
+            ><img
+              src="https://inicie.digital/wp-content/uploads/2021/05/google-edu-partner_2021-300x85.jpeg"
+              alt="Google for Education"
+              class="partners__logo"
+          /></a>
+        </ng-template>
+        <ng-template swiperSlide
+          ><a
+            type="button"
+            href="https://cloud.google.com/"
+            class="partners__link"
+            ><img
+              src="https://inicie.digital/wp-content/uploads/2021/08/GC-Partner-outline-H-300x92.png"
+              alt="Google Cloud"
+              class="partners__logo"
+          /></a>
+        </ng-template>
+      </swiper>
+    </div>
+  </div>
+</section>
