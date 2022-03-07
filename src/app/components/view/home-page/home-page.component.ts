@@ -53,8 +53,8 @@ export class HomePageComponent implements OnInit {
   }
 
   indexNumber = 1;
-  exampleConfig = { slidesPerView: 3 };
-  slidesPerView: number = 4;
+  exampleConfig = { slidesPerView: 6 };
+  slidesPerView: number = 6;
   pagination: any = false;
 
   keyboard= {

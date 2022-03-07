@@ -564,6 +564,8 @@ ng-template {
 
 /*===========SECTION-6__CASES===========*/
 
+/*===========SECTION-7__CLIENTS===========*/
+
 .clients {
   display: flex;
   flex-direction: column;
@@ -599,3 +601,12 @@ ng-template {
   color: #06092d;
   font: 400 20px/1.7 'Open Sans', sans-serif;
 }
+
+.clients__image-container {
+  height: 110px;
+  width: 120px;
+  display: flex;
+  align-items: center;
+}
+
+/*===========SECTION-7__CLIENTS===========*/
