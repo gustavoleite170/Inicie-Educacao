@@ -34,6 +34,7 @@ p {
 .presentation__briefing__image {
   padding: 10px;
   flex-basis: 54.017%;
+  min-width: 280px;
 }
 
 .presentation__briefing__title {
@@ -102,6 +103,52 @@ p {
   text-align: center;
   font: 700 19px/19.2px 'Open Sans', sans-serif;
   color: #303030;
+}
+
+@media only screen and (max-width: 1000px) {
+  .presentation__briefing__form,
+  .presentation__briefing__image {
+    flex-basis: auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .presentation__briefing__title {
+    color: #233674;
+    font: 800 34px/1.2 'Open Sans', sans-serif;
+    text-align: center;
+  }
+
+  .presentation__briefing__body-text {
+    color: #828282;
+    font: 400 18px/1.2 'Open Sans', sans-serif;
+    text-align: center;
+  }
+
+  .presentation__client-numbers {
+    width: 100%;
+    text-align: center;
+    color: #828282;
+    font: 400 14px 'Open Sans', sans-serif;
+  }
+
+  .presentation__our-focus {
+    width: 100%;
+    text-align: center;
+    font: 700 16px/16.2px 'Open Sans', sans-serif;
+    color: #303030;
+  }
+
+}
+
+@media only screen and (max-width: 400px) {
+  .presentation__briefing__submission {
+    align-self: center;
+    display: grid;
+    grid-template-columns: auto;
+    width: 100%;
+    gap: 10px;
+  }
 }
 
 /*===========SECTION-1__PRESENTATION===========*/
