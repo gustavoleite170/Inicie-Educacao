@@ -163,6 +163,21 @@ a {
   border-bottom: none;
 }
 
+.icon-angle-right {
+  position: absolute;
+  right: 15px;
+  top: 13px;
+  width: 10px;
+  height: 20px;
+  display: block;
+  color: #253d4a;
+  line-height: 20px;
+  font-size: 18px;
+  font-weight: 800;
+  text-align: center;
+  z-index: 5;
+}
+
 @media only screen and (min-width: 1600px) {
   .header__left-side {
     gap: 120px;
