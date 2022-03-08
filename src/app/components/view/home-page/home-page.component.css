@@ -681,9 +681,26 @@ ng-template {
 
 .blog__articles {
   display: flex;
-  justify-content: center;
   gap: 30px;
   flex-wrap: wrap;
+}
+.blog__articles__box {
+  flex-grow: 1;
+  display: flex;
+  width: calc((1vw - 220px) / 3);
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 5px;
+  border: 0 solid #818a91;
+  box-shadow: 0 0 10px 0 rgb(0 0 0 / 15%);
+  transition: all 0.3s;
+}
+
+.blog__articles__box:hover {
+  box-shadow: 0 0 30px 0 rgb(0 0 0 / 15%);
+  filter: brightness(105%);
+  transition: all 0.3s;
 }
 
 .blog__articles__box__header {
@@ -691,7 +708,9 @@ ng-template {
 }
 
 .blog__articles__box__image {
-  cursor: pointer;
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .blog__articles__box__tag {
@@ -705,5 +724,52 @@ ng-template {
   border-radius: 999px;
   z-index: 2;
 }
+
+.blog__articles__box__main {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 0px 30px;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.blog__articles__box__main__title {
+  font: 700 21px/1.2 'Open Sans', sans-serif;
+  color: #303030;
+}
+
+.blog__articles__box__main__text {
+  font: 400 14px/1.5 'Open Sans', sans-serif;
+  color: #777;
+  margin-bottom: 30px;
+}
+
+.blog__date {
+  padding: 15px 30px;
+  border-top: 1px solid #eaeaea;
+  font: 400 12px/1.3 'Open Sans', sans-serif;
+  color: #adadad;
+}
+
+.blog__button {
+  width: 223.2px;
+  align-self: center;
+  background-color: #ffffff;
+  font: 700 15px/1 'Open Sans', sans-serif;
+  color: #ea6538;
+  border-radius: 3px;
+  border: solid 2px #ea6538;
+  padding: 15px 32px;
+  margin-top: 10px;
+  transition: all 0.5s;
+}
+
+@media (hover: hover) {
+  .blog__button:hover {
+    background-color: #ea6538;
+    color: #ffffff;
+  }
+} /* To prevent bugs on mobile devices when touching menu options*/
 
 /*===========SECTION-9__BLOG===========*/
