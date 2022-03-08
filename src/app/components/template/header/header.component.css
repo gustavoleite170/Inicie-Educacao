@@ -38,11 +38,16 @@ a {
 .header__left-side {
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
 }
 
 .header__logo {
   display: flex;
   cursor: pointer;
+}
+
+.header__logo__wrapper {
+  display: flex;
 }
 
 .header__menu,
@@ -194,6 +199,11 @@ a {
   gap: 20px;
 }
 
+.header__right-side__search-and-socials {
+  display: flex;
+  gap: 20px;
+}
+
 .header__search-box {
   position: relative;
   width: 265px;
@@ -288,3 +298,36 @@ input.header__search-box__input:focus {
 }
 
 /*==============Right-Side===============*/
+
+@media only screen and (max-width: 1200px) {
+}
+
+@media only screen and (max-width: 1070px) {
+  .header__search-box__container,
+  .header__right-side__search-and-socials,
+  .header__logo__wrapper,
+  .header__menu__wrapper {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center;
+  }
+
+  .header__left-side {
+    gap: 10px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+}
+
+@media only screen and (max-width: 950px) {
+  .header__right-side {
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+}
+
+@media only screen and (max-width: 400px) {
+}
