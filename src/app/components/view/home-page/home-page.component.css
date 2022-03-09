@@ -520,13 +520,100 @@ p {
   box-sizing: border-box;
 }
 
-.about-us__images__1 {
+.about-us__images__1-box {
   position: relative;
   top: -20px;
   right: -10px;
   width: 400px;
   height: 524px;
 }
+
+.about-us__images__1 {
+  width: 100%;
+}
+
+@media only screen and (max-width: 1200px) {
+  .about-us__images__ball {
+    width: 416px;
+    height: 416px;
+  }
+
+  .about-us__images__1-box {
+    width: 320px;
+    height: 420px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .about-us__images__ball {
+    width: 338px;
+    height: 338px;
+  }
+
+  .about-us__images__1-box {
+    width: 260px;
+    height: 340px;
+  }
+
+  .about-us__briefing__explanation {
+    font: 400 16px/1.7 'Open Sans', sans-serif;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .about-us {
+    flex-wrap: wrap;
+    gap: 60px;
+  }
+
+  .about-us__briefing,
+  .about-us__images {
+    flex-basis: 100%;
+  }
+
+  .about-us__briefing__title {
+    font: 800 34px/1.2 'Open Sans', Sans-serif;
+  }
+
+  .about-us__images {
+    padding-left: 0px;
+  }
+
+  .about-us__images__ball {
+    width: 520px;
+    height: 520px;
+  }
+
+  .about-us__images__1-box {
+    width: 400px;
+    height: 524px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .about-us__images__ball {
+    width: 416px;
+    height: 416px;
+  }
+
+  .about-us__images__1-box {
+    width: 320px;
+    height: 420px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .about-us__images__ball {
+    width: 280px;
+    height: 280px;
+  }
+
+  .about-us__images__1-box {
+    width: 215px;
+    height: 282px;
+  }
+}
+
 /*===========SECTION-4__ABOUT-US===========*/
 
 /*===========SECTION-5__TESTIMONIALS===========*/
