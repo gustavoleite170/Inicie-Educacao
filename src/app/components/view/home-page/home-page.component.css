@@ -207,6 +207,10 @@ p {
   font: 800 48px/1.2 'Open Sans', Sans-serif;
 }
 
+.platform__image__middle {
+  display: none;
+}
+
 .platform__brief-explanation {
   color: #5f6368;
   font: 400 17px/1.8 'Open Sans', Sans-serif;
@@ -256,8 +260,12 @@ p {
     gap: 60px;
   }
 
-  .platform__briefing-and-call,
   .platform__image {
+    display: none;
+  }
+
+  .platform__briefing-and-call,
+  .platform__image__middle {
     flex-basis: 100%;
     display: flex;
     justify-content: center;
@@ -321,6 +329,10 @@ p {
   flex-grow: 1;
   position: relative;
   padding: 0 15px;
+}
+
+.numbers__images__container {
+  position: relative;
 }
 
 .numbers__images__wrapper {
@@ -390,6 +402,42 @@ p {
   font: 700 19px/1.6 'Open Sans', sans-serif;
   margin-top: 14px;
   color: #06092d;
+}
+
+@media only screen and (max-width: 1100px) {
+  .numbers__ {
+    flex-wrap: wrap;
+    gap: 200px;
+  }
+
+  .numbers__images,
+  .numbers__statistics {
+    flex-basis: 100%;
+    padding: 0 15px;
+  }
+
+  .numbers__images {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .numbers__images {
+    display: none;
+  }
+
+  .numbers__statistics__title {
+    color: #303030;
+    font: 800 34px/1.2 'Open Sans', Sans-serif;
+    margin-bottom: 55px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .numbers__statistics__info {
+    grid-template-columns: none;
+  }
 }
 
 /*===========SECTION-3__NUMBERS===========*/

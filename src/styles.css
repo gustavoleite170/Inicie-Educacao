@@ -46,3 +46,7 @@ a {
   height: 0.75rem;
   width: 0.75rem;
 }
+
+body.mat-typography {
+  overflow-x: hidden;
+}
