@@ -55,6 +55,11 @@ textarea {
   margin-bottom: 20px;
 }
 
+/* .captcha__dimensions {
+  width: 304px;
+  height: 78px;
+} */
+
 .contact__save {
   width: auto;
   font: 400 15px 'Open Sans', Sans-serif;
@@ -79,4 +84,40 @@ textarea {
   background: #233674;
   border-color: #233674;
   color: #ffffff;
+}
+
+@media only screen and (max-width: 1200px) {
+  .max-width-1200px {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .max-width-1200px {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .max-width-1200px {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  .contact__form__box {
+    grid-template-columns: none;
+  }
+
+  .contact__call {
+    font: 800 32px 'Open Sans', Sans-serif;
+  }
+
+  /* .captcha__dimensions {
+    width: 250px;
+    height: 78px;
+  } */
 }
