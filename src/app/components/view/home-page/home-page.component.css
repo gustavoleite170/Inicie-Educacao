@@ -9,28 +9,40 @@ p {
 }
 
 @media only screen and (max-width: 1200px) {
-  .max-width-1200px {
+  .max-width-1200px,
+  section.cases,
+  section.clients,
+  section.blog {
     padding-left: 20px;
     padding-right: 20px;
   }
 }
 
 @media only screen and (max-width: 800px) {
-  .max-width-1200px {
+  .max-width-1200px,
+  section.cases,
+  section.clients,
+  section.blog {
     padding-left: 15px;
     padding-right: 15px;
   }
 }
 
 @media only screen and (max-width: 600px) {
-  .max-width-1200px {
+  .max-width-1200px,
+  section.cases,
+  section.clients,
+  section.blog {
     padding-left: 10px;
     padding-right: 10px;
   }
 }
 
 @media only screen and (max-width: 400px) {
-  .max-width-1200px {
+  .max-width-1200px,
+  section.cases,
+  section.clients,
+  section.blog {
     padding-left: 5px;
     padding-right: 5px;
   }
@@ -799,7 +811,7 @@ ng-template {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 10px;
-  row-gap: 20px;
+  row-gap: 30px;
 }
 
 .cases__images__photo {
@@ -857,6 +869,38 @@ ng-template {
     color: #ffffff;
   }
 } /* To prevent bugs on mobile devices when touching menu options*/
+
+@media only screen and (max-width: 1373px) {
+  .cases__images__photo__text {
+    font: 700 17px/1.2 'Open Sans', sans-serif;
+  }
+}
+
+@media only screen and (max-width: 1140px) {
+  .cases__images__photo__text-box {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .cases__images__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .cases__header__title {
+    font-size: 34px;
+  }
+
+  .cases__header__explanation {
+    font-size: 18px;
+  }
+
+  .cases__images__wrapper {
+    grid-template-columns: none;
+  }
+}
 
 /*===========SECTION-6__CASES===========*/
 
