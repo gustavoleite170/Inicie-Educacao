@@ -74,3 +74,34 @@ nav a {
   text-align: center;
   font: 400 12px 'Open Sans', sans-serif;
 }
+
+@media only screen and (max-width: 1200px) {
+  .max-width-1200px {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .max-width-1200px {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .footer__box-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .max-width-1200px {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  .footer__box-wrapper {
+    grid-template-columns: none;
+  }
+}
