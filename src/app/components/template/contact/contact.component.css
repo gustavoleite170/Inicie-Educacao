@@ -19,6 +19,7 @@ textarea {
 .max-width-1200px {
   max-width: 600px;
   padding: 70px 0px 85px;
+  /* overflow-x: hidden; */
 }
 
 .contact {
