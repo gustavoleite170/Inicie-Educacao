@@ -689,6 +689,7 @@ p {
   position: relative;
   display: flex;
   gap: 23px;
+  margin-bottom: 20px;
 }
 
 .testimonials__carroussel__slides__author-photo {
