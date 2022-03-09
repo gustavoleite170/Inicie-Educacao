@@ -393,11 +393,12 @@
   </div>
   <div class="clients__carroussel">
     <swiper
-      [slidesPerView]="6"
-      [spaceBetween]="30"
+      [slidesPerView]="2"
+      [spaceBetween]="100"
       [pagination]="{ clickable: true }"
       [loop]="true"
       [keyboard]="true"
+      [breakpoints]="breakpointsClients"
     >
       <ng-template swiperSlide
         ><div class="clients__image-container">

@@ -65,6 +65,13 @@ export class HomePageComponent implements OnInit {
     800: { slidesPerView: 2, spaceBetween: 30 },
   };
 
+  breakpointsClients = {
+    400: { slidesPerView: 3, spaceBetween: 40 },
+    550: { slidesPerView: 4, spaceBetween: 40 },
+    700: { slidesPerView: 5, spaceBetween: 30 },
+    1000: { slidesPerView: 6, spaceBetween: 30 },
+  };
+
 
 
 

@@ -945,6 +945,16 @@ ng-template {
   align-items: center;
 }
 
+@media only screen and (max-width: 750px) {
+  .clients__header__title {
+    font-size: 34px;
+  }
+
+  .clients__header__explanation {
+    font-size: 18px;
+  }
+}
+
 /*===========SECTION-7__CLIENTS===========*/
 
 /*===========SECTION-8__PARTNERS===========*/
