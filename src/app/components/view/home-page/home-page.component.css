@@ -8,6 +8,34 @@ p {
   margin: 0;
 }
 
+@media only screen and (max-width: 1200px) {
+  .max-width-1200px {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .max-width-1200px {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .max-width-1200px {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .max-width-1200px {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
 /*===========SECTION-1__PRESENTATION===========*/
 
 .presentation.max-width-1200px {
@@ -112,7 +140,7 @@ p {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 750px) {
   .presentation__briefing__title {
     color: #233674;
     font: 800 34px/1.2 'Open Sans', sans-serif;
@@ -138,7 +166,6 @@ p {
     font: 700 16px/16.2px 'Open Sans', sans-serif;
     color: #303030;
   }
-
 }
 
 @media only screen and (max-width: 400px) {
@@ -156,9 +183,13 @@ p {
 /*===========SECTION-2__PLATFORM===========*/
 
 .platform {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
   overflow: hidden;
+}
+
+.platform__briefing-and-call,
+.platform__image {
+  flex-basis: 50%;
 }
 
 .platform__briefing-and-call {
@@ -186,12 +217,14 @@ p {
 }
 
 .platform__icons-1-and-2 {
+  width: 100%;
   display: flex;
 }
 
 .platform__icon-1,
 .platform__icon-2 {
-  flex-grow: 1;
+  flex-basis: 50%;
+  display: flex;
 }
 
 .platform__meet-us-button {
@@ -215,6 +248,60 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media only screen and (max-width: 1100px) {
+  .platform {
+    flex-wrap: wrap;
+    gap: 60px;
+  }
+
+  .platform__briefing-and-call,
+  .platform__image {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .platform__briefing-and-call {
+    align-items: center;
+  }
+
+  .platform__title,
+  .platform__brief-explanation,
+  .platform__brief-explanation {
+    text-align: center;
+  }
+
+  .platform__icon-1,
+  .platform__icon-2 {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .platform__title {
+    font: 800 34px/1.2 'Open Sans', Sans-serif;
+  }
+
+  .platform__brief-explanation {
+    font: 400 14.5px/1.8 'Open Sans', Sans-serif;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .platform__briefing-and-call__image {
+    width: 100%;
+  }
+
+  .platform__icons-1-and-2 {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .platform__image__computer {
+    width: 100%;
+  }
 }
 
 /*===========SECTION-2__PLATFORM===========*/
