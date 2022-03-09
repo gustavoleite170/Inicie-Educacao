@@ -61,6 +61,14 @@ export class HomePageComponent implements OnInit {
     onlyInViewport: false,
   }
 
+  breakpointsTestimonials = {
+    800: { slidesPerView: 2, spaceBetween: 30 },
+  };
+
+
+
+
+
   
 
   

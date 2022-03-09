@@ -50,3 +50,10 @@ a {
 body.mat-typography {
   overflow-x: hidden;
 }
+
+@media only screen and (max-width: 800px) {
+  .swiper .swiper-pagination-bullets .swiper-pagination-bullet {
+    height: 0.5rem;
+    width: 0.5rem;
+  }
+}

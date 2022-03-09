@@ -188,11 +188,12 @@
     </p>
     <div class="testimonials__carroussel">
       <swiper
-        [slidesPerView]="2"
+        [slidesPerView]="1"
         [spaceBetween]="30"
         [pagination]="{ clickable: true }"
         [loop]="true"
         [keyboard]="true"
+        [breakpoints] = "breakpointsTestimonials"
       >
         <ng-template swiperSlide>
           <div class="testimonials__carroussel__slides">
