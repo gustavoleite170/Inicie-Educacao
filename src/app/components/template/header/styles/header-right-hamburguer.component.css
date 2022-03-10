@@ -17,7 +17,6 @@ a {
 }
 
 @media only screen and (max-width: 1069px) {
-
   .icon-bars {
     display: inline;
   }
@@ -112,9 +111,16 @@ a {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.header__hamburguer__menu__second,
-.header__hamburguer__menu__second__sub,
-.header__hamburguer__menu__second-box{
+.header__hamburguer__menu__second-box,
+.header__hamburguer__menu__second__sub-box {
   display: none;
   transition: all 0.5s;
+}
+
+.header__hamburguer__menu__toggle:hover ~ .header__hamburguer__menu__second-box,
+.header__hamburguer__menu__second-box:hover,
+.header__hamburguer__menu__toggle__:hover
+  ~ .header__hamburguer__menu__second__sub-box,
+.header__hamburguer__menu__second__sub-box:hover {
+  display: inline;
 }
