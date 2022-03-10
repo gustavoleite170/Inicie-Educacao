@@ -1,0 +1,67 @@
+a {
+  line-height: 24px;
+  font-size: 15px;
+  color: #404040;
+  text-transform: capitalize;
+}
+
+.header__right-side__hamburger-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__right-side__hamburguer__menu-container {
+  position: absolute;
+  width: 280px;
+  top: 0;
+  right: 0;
+  background: #ffffff;
+  /* opacity: 0;
+  display: none; */
+
+  transition: all 0.5s;
+}
+
+.header__right-side__hamburger-icon:hover
+  ~ .header__right-side__hamburguer__menu-container,
+.header__right-side__hamburguer__menu-container:hover {
+  opacity: 1;
+  display: block;
+}
+
+.header__hamburguer__menu__toggle,
+.header__hamburguer__menu__toggle__ {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon-bars {
+  font-size: 36px;
+  color: #303030;
+  cursor: pointer;
+}
+
+.icon-angle-down {
+  color: #253d4a;
+  line-height: 20px;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.icon-angle-down__wrapper {
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+li.header__hamburguer__menu__first:nth-child(3),
+li.header__hamburguer__menu__first > .header__hamburguer__menu__toggle,
+.header__hamburguer__menu__toggle__,
+li.header__hamburguer__menu__second,
+li.header__hamburguer__menu__second__sub {
+  padding: 10px 20px;
+}
