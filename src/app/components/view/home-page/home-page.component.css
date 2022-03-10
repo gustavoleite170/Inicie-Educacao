@@ -977,18 +977,41 @@ ng-template {
 }
 
 .partners__link {
-  width: 300px;
-  height: 100px;
+  flex-basis: 100%;
   display: flex;
-  align-items: center;
+  justify-content: center;
 }
 
 .partners__logo {
-  width: 100%;
+  width: 300px;
 }
 
 .partners__swiper__wrapper {
   padding: 0 150px;
+}
+
+@media only screen and (max-width: 800px) {
+  .partners__swiper__wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .partners__swiper__wrapper {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .partners__swiper__wrapper {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .partners__logo {
+    width: 100%;
+  }
 }
 
 /*===========SECTION-8__PARTNERS===========*/

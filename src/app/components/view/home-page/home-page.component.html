@@ -193,7 +193,7 @@
         [pagination]="{ clickable: true }"
         [loop]="true"
         [keyboard]="true"
-        [breakpoints] = "breakpointsTestimonials"
+        [breakpoints]="breakpointsTestimonials"
       >
         <ng-template swiperSlide>
           <div class="testimonials__carroussel__slides">
@@ -399,6 +399,7 @@
       [loop]="true"
       [keyboard]="true"
       [breakpoints]="breakpointsClients"
+      [slidesPerGroup]="2"
     >
       <ng-template swiperSlide
         ><div class="clients__image-container">
@@ -685,11 +686,12 @@
     </div>
     <div class="partners__swiper__wrapper">
       <swiper
-        [slidesPerView]="2"
-        [spaceBetween]="260"
+        [slidesPerView]="1"
+        [spaceBetween]="60"
         [pagination]="{ clickable: true }"
         [loop]="true"
         [keyboard]="true"
+        [breakpoints]="breakpointsPartners"
       >
         <ng-template swiperSlide
           ><a type="button" href="" class="partners__link"

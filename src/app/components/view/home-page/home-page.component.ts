@@ -65,12 +65,18 @@ export class HomePageComponent implements OnInit {
     800: { slidesPerView: 2, spaceBetween: 30 },
   };
 
+
+  slidesPerGroup = 0;
   breakpointsClients = {
-    400: { slidesPerView: 3, spaceBetween: 40 },
-    550: { slidesPerView: 4, spaceBetween: 40 },
-    700: { slidesPerView: 5, spaceBetween: 30 },
-    1000: { slidesPerView: 6, spaceBetween: 30 },
+    400: { slidesPerView: 3, spaceBetween: 40, slidesPerGroup: 3 },
+    550: { slidesPerView: 4, spaceBetween: 40, slidesPerGroup: 4 },
+    700: { slidesPerView: 5, spaceBetween: 30, slidesPerGroup: 5 },
+    1000: { slidesPerView: 6, spaceBetween: 30, slidesPerGroup: 6 },
   };
+
+  breakpointsPartners = {
+    1200: { slidesPerView: 2, spaceBetween: 260},
+  }
 
 
 
