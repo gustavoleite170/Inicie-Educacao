@@ -114,7 +114,6 @@ a {
 .header__hamburguer__menu__second-box,
 .header__hamburguer__menu__second__sub-box {
   display: none;
-  transition: all 0.5s;
 }
 
 .header__hamburguer__menu__toggle:hover ~ .header__hamburguer__menu__second-box,
