@@ -40,11 +40,14 @@
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .blog__articles__box {
   flex-grow: 1;
   display: flex;
   width: calc((1vw - 220px) / 3);
+  min-width: 300px;
+  max-width: 450px;
   justify-content: space-between;
   flex-direction: column;
   gap: 20px;
@@ -128,5 +131,18 @@
     color: #ffffff;
   }
 } /* To prevent bugs on mobile devices when touching menu options*/
+
+@media only screen and (max-width: 750px) {
+  .blog__header__title {
+    color: #303030;
+    font: 800 34px/1.2 'Open Sans', Sans-serif;
+  }
+  
+  .blog__header__explanation {
+    position: relative;
+    color: #06092d;
+    font: 400 16px/1.7 'Open Sans', sans-serif;
+  }
+}
 
 /*===========SECTION-9__BLOG===========*/
