@@ -1,0 +1,64 @@
+/*===========SECTION-8__PARTNERS===========*/
+
+.partners {
+  background-color: #f7f7f7;
+}
+
+.partners__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.partners__header__title {
+  color: #303030;
+  font: 800 48px/1.2 'Open Sans', Sans-serif;
+  text-align: center;
+}
+
+.partners__link {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.partners__logo {
+  width: 300px;
+}
+
+.partners__swiper__wrapper {
+  padding: 0 150px;
+}
+
+@media only screen and (max-width: 800px) {
+  .partners__swiper__wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .partners__header__title {
+    font: 800 34px/1.2 'Open Sans', Sans-serif;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .partners__swiper__wrapper {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .partners__swiper__wrapper {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .partners__logo {
+    width: 100%;
+  }
+}
+
+/*===========SECTION-8__PARTNERS===========*/

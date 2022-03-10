@@ -1,0 +1,142 @@
+/*===========SECTION-1__PRESENTATION===========*/
+
+.presentation.max-width-1200px {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding-top: 180px;
+}
+
+.presentation__briefing {
+  padding-bottom: 28px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.presentation__briefing__form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+  margin-bottom: 10px;
+  flex-basis: 45.983%;
+}
+.presentation__briefing__image {
+  padding: 10px;
+  flex-basis: 54.017%;
+}
+
+.presentation__briefing__title {
+  color: #233674;
+  font: 800 48px/1.2 'Open Sans', sans-serif;
+}
+
+.presentation__briefing__body-text {
+  color: #828282;
+  font: 400 25px/1.2 'Open Sans', sans-serif;
+}
+
+.presentation__briefing__submission {
+  align-self: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  gap: 10px;
+}
+
+.presentation__briefing__submission input {
+  width: 100%;
+  max-width: 100%;
+  border: 1px solid #818a91;
+  background-color: transparent;
+  color: #373a3c;
+  font: 400 15px/1.4 'Open Sans', sans-serif;
+  min-height: 40px;
+  padding: 5px 14px;
+  border-radius: 3px;
+  outline: none;
+}
+
+.presentation__briefing__submission button {
+  width: 100%;
+  background-color: #00a650;
+  color: #ffffff;
+  font: 700 15px/1.4 'Open Sans', sans-serif;
+  border: solid 0 #ffffff;
+  border-radius: 3px;
+  padding: 15px 32px 15px 32px;
+  text-decoration: none;
+  outline: none;
+  transition: all 0.5s;
+}
+
+@media (hover: hover) {
+  .presentation__briefing__submission button:hover {
+    background-color: #233674;
+  }
+} /* To prevent bugs on mobile devices when touching menu options*/
+
+.presentation__briefing__image > img {
+  width: 100%;
+}
+
+.presentation__client-numbers {
+  width: 100%;
+  text-align: center;
+  color: #828282;
+  font: 400 16px 'Open Sans', sans-serif;
+}
+
+.presentation__our-focus {
+  width: 100%;
+  text-align: center;
+  font: 700 19px/19.2px 'Open Sans', sans-serif;
+  color: #303030;
+}
+
+@media only screen and (max-width: 1000px) {
+  .presentation__briefing__form,
+  .presentation__briefing__image {
+    flex-basis: auto;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .presentation__briefing__title {
+    color: #233674;
+    font: 800 34px/1.2 'Open Sans', sans-serif;
+    text-align: center;
+  }
+
+  .presentation__briefing__body-text {
+    color: #828282;
+    font: 400 18px/1.2 'Open Sans', sans-serif;
+    text-align: center;
+  }
+
+  .presentation__client-numbers {
+    width: 100%;
+    text-align: center;
+    color: #828282;
+    font: 400 14px 'Open Sans', sans-serif;
+  }
+
+  .presentation__our-focus {
+    width: 100%;
+    text-align: center;
+    font: 700 16px/16.2px 'Open Sans', sans-serif;
+    color: #303030;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .presentation__briefing__submission {
+    align-self: center;
+    display: grid;
+    grid-template-columns: auto;
+    width: 100%;
+    gap: 10px;
+  }
+}
+
+/*===========SECTION-1__PRESENTATION===========*/

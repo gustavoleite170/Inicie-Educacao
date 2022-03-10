@@ -1,0 +1,133 @@
+/*===========SECTION-2__PLATFORM===========*/
+
+.platform {
+  display: flex;
+  overflow: hidden;
+}
+
+.platform__briefing-and-call,
+.platform__image {
+  flex-basis: 50%;
+}
+
+.platform__briefing-and-call {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.platform__briefing-and-call__image {
+  max-width: 300px;
+}
+
+.platform__title {
+  color: #233674;
+  font: 800 48px/1.2 'Open Sans', Sans-serif;
+}
+
+.platform__image__middle {
+  display: none;
+}
+
+.platform__brief-explanation {
+  color: #5f6368;
+  font: 400 17px/1.8 'Open Sans', Sans-serif;
+}
+
+.platform__icon-3 {
+  max-width: 146px;
+}
+
+.platform__icons-1-and-2 {
+  width: 100%;
+  display: flex;
+}
+
+.platform__icon-1,
+.platform__icon-2 {
+  flex-basis: 50%;
+  display: flex;
+}
+
+.platform__meet-us-button {
+  width: 126.2px;
+  background-color: #ea6538;
+  font: 700 15px/1 'Open Sans', sans-serif;
+  color: #ffffff;
+  border-radius: 3px;
+  padding: 20px 32px;
+  margin-top: 10px;
+  transition: all 0.5s;
+}
+
+@media (hover: hover) {
+  .platform__meet-us-button:hover {
+    background-color: #233674;
+  }
+} /* To prevent bugs on mobile devices when touching menu options*/
+
+.platform__image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 1100px) {
+  .platform {
+    flex-wrap: wrap;
+    gap: 60px;
+  }
+
+  .platform__image {
+    display: none;
+  }
+
+  .platform__briefing-and-call,
+  .platform__image__middle {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .platform__briefing-and-call {
+    align-items: center;
+  }
+
+  .platform__title,
+  .platform__brief-explanation,
+  .platform__brief-explanation {
+    text-align: center;
+  }
+
+  .platform__icon-1,
+  .platform__icon-2 {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .platform__title {
+    font: 800 34px/1.2 'Open Sans', Sans-serif;
+  }
+
+  .platform__brief-explanation {
+    font: 400 14.5px/1.8 'Open Sans', Sans-serif;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .platform__briefing-and-call__image {
+    width: 100%;
+  }
+
+  .platform__icons-1-and-2 {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .platform__image__computer {
+    width: 100%;
+  }
+}
+
+/*===========SECTION-2__PLATFORM===========*/

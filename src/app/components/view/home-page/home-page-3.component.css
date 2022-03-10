@@ -1,0 +1,127 @@
+/*===========SECTION-3__NUMBERS===========*/
+
+.numbers {
+  background-color: #f7f7f7;
+}
+
+.numbers__ {
+  display: flex;
+}
+
+.numbers__images,
+.numbers__statistics {
+  flex-grow: 1;
+  position: relative;
+  padding: 0 15px;
+}
+
+.numbers__images__container {
+  position: relative;
+}
+
+.numbers__images__wrapper {
+  width: 570px;
+  position: relative;
+}
+
+.numbers__statistics__wrapper {
+  padding: 0 15px;
+  margin-bottom: 40px;
+}
+
+.numbers__images__1 {
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  transform: rotate(-7deg);
+}
+
+.numbers__images__2 {
+  position: absolute;
+  right: 15px;
+  bottom: -160px;
+  border-radius: 5px;
+  overflow: hidden;
+  transform: rotate(7deg);
+}
+
+.numbers__images__ball {
+  position: absolute;
+  left: 0px;
+  top: 50px;
+  width: 470px;
+  height: 470px;
+  border-radius: 50%;
+  background-color: #233674;
+}
+
+.numbers__statistics__little-title {
+  position: relative;
+  color: #e8532c;
+  font: 400 16px/1.7 'Open Sans', sans-serif;
+}
+
+.numbers__statistics__title {
+  color: #303030;
+  font: 800 48px/1.2 'Open Sans', Sans-serif;
+  margin-bottom: 55px;
+}
+
+.numbers__statistics__info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 40px;
+  column-gap: 30px;
+}
+
+.numbers__statistics__info__cards h2 {
+  font: 800 40px/1 'Open Sans', sans-serif;
+  position: relative;
+  font-weight: 800;
+  color: #06092d;
+}
+
+.numbers__statistics__info__cards p {
+  position: relative;
+  font: 700 19px/1.6 'Open Sans', sans-serif;
+  margin-top: 14px;
+  color: #06092d;
+}
+
+@media only screen and (max-width: 1100px) {
+  .numbers__ {
+    flex-wrap: wrap;
+    gap: 200px;
+  }
+
+  .numbers__images,
+  .numbers__statistics {
+    flex-basis: 100%;
+    padding: 0 15px;
+  }
+
+  .numbers__images {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .numbers__images {
+    display: none;
+  }
+
+  .numbers__statistics__title {
+    color: #303030;
+    font: 800 34px/1.2 'Open Sans', Sans-serif;
+    margin-bottom: 55px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .numbers__statistics__info {
+    grid-template-columns: none;
+  }
+}
+
+/*===========SECTION-3__NUMBERS===========*/

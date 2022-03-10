@@ -1,0 +1,132 @@
+/*===========SECTION-9__BLOG===========*/
+
+.blog {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 90px 80px;
+}
+
+.blog__header {
+  flex-basis: 58.33%;
+  padding: 0 15px;
+  text-align: center;
+}
+
+.blog__header__little-title {
+  position: relative;
+  color: #e8532c;
+  font: 400 16px/1.7 'Open Sans', sans-serif;
+}
+
+.blog__header__box {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.blog__header__title {
+  color: #303030;
+  font: 800 48px/1.2 'Open Sans', Sans-serif;
+}
+
+.blog__header__explanation {
+  position: relative;
+  color: #06092d;
+  font: 400 20px/1.7 'Open Sans', sans-serif;
+}
+
+.blog__articles {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.blog__articles__box {
+  flex-grow: 1;
+  display: flex;
+  width: calc((1vw - 220px) / 3);
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 5px;
+  border: 0 solid #818a91;
+  box-shadow: 0 0 10px 0 rgb(0 0 0 / 15%);
+  transition: all 0.3s;
+}
+
+.blog__articles__box:hover {
+  box-shadow: 0 0 30px 0 rgb(0 0 0 / 15%);
+  filter: brightness(105%);
+  transition: all 0.3s;
+}
+
+.blog__articles__box__header {
+  position: relative;
+}
+
+.blog__articles__box__image {
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.blog__articles__box__tag {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #818a91;
+  color: #fff;
+  padding: 7.2px 14.4px;
+  font: 400 12px/1 'Open Sans', sans-serif;
+  border-radius: 999px;
+  z-index: 2;
+}
+
+.blog__articles__box__main {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 0px 30px;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.blog__articles__box__main__title {
+  font: 700 21px/1.2 'Open Sans', sans-serif;
+  color: #303030;
+}
+
+.blog__articles__box__main__text {
+  font: 400 14px/1.5 'Open Sans', sans-serif;
+  color: #777;
+  margin-bottom: 30px;
+}
+
+.blog__date {
+  padding: 15px 30px;
+  border-top: 1px solid #eaeaea;
+  font: 400 12px/1.3 'Open Sans', sans-serif;
+  color: #adadad;
+}
+
+.blog__button {
+  width: 223.2px;
+  align-self: center;
+  background-color: #ffffff;
+  font: 700 15px/1 'Open Sans', sans-serif;
+  color: #ea6538;
+  border-radius: 3px;
+  border: solid 2px #ea6538;
+  padding: 15px 32px;
+  margin-top: 10px;
+  transition: all 0.5s;
+}
+
+@media (hover: hover) {
+  .blog__button:hover {
+    background-color: #ea6538;
+    color: #ffffff;
+  }
+} /* To prevent bugs on mobile devices when touching menu options*/
+
+/*===========SECTION-9__BLOG===========*/

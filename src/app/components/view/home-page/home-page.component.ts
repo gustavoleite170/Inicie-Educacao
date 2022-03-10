@@ -35,7 +35,7 @@ SwiperCore.use([
 @Component({
   selector: 'app-home-page',
   templateUrl: './home-page.component.html',
-  styleUrls: ['./home-page.component.css']
+  styleUrls: ['./home-page-general.component.css', './home-page-1.component.css', './home-page-2.component.css', './home-page-3.component.css', './home-page-4.component.css', './home-page-5.component.css', './home-page-6.component.css', './home-page-7.component.css', './home-page-8.component.css', './home-page-9.component.css']
 })
 export class HomePageComponent implements OnInit {
 
