@@ -6,9 +6,21 @@ a {
 }
 
 .icon-bars {
+  position: absolute;
   font-size: 36px;
   color: #303030;
   cursor: pointer;
+  display: none;
+  z-index: 40;
+  top: -40px;
+  right: 15px;
+}
+
+@media only screen and (max-width: 1069px) {
+
+  .icon-bars {
+    display: inline;
+  }
 }
 
 .icon-angle-down {
@@ -38,6 +50,8 @@ a {
 
 .header__right-side__hamburger-icon {
   display: flex;
+  position: relative;
+  width: 100%;
   align-items: center;
   justify-content: center;
 }
@@ -45,11 +59,11 @@ a {
 .header__right-side__hamburguer__menu-container {
   position: absolute;
   width: 280px;
+  height: 100vh;
   top: 0;
-  right: 0;
+  right: -280px;
   background: #ffffff;
-  /* opacity: 0;
-  display: none; */
+  z-index: 100;
 
   transition: all 0.5s;
 }
@@ -57,14 +71,14 @@ a {
 .header__right-side__hamburger-icon:hover
   ~ .header__right-side__hamburguer__menu-container,
 .header__right-side__hamburguer__menu-container:hover {
-  opacity: 1;
-  display: block;
+  right: 0;
 }
 
 .header__right-side__hamburguer__menu-logo-and-lang {
   width: 100%;
   position: relative;
   padding: 20px 20px 5px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .header__right-side__hamburguer__menu-logo-img {
@@ -89,11 +103,18 @@ a {
   align-items: center;
 }
 
-li.header__hamburguer__menu__first:nth-child(3),
-li.header__hamburguer__menu__first > .header__hamburguer__menu__toggle,
+.header__hamburguer__menu__first:nth-child(3),
+.header__hamburguer__menu__first > .header__hamburguer__menu__toggle,
 .header__hamburguer__menu__toggle__,
-li.header__hamburguer__menu__second,
-li.header__hamburguer__menu__second__sub {
+.header__hamburguer__menu__second,
+.header__hamburguer__menu__second__sub {
   padding: 10px 14.21px 10px 20px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.header__hamburguer__menu__second,
+.header__hamburguer__menu__second__sub,
+.header__hamburguer__menu__second-box{
+  display: none;
+  transition: all 0.5s;
 }

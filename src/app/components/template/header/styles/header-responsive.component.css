@@ -23,6 +23,10 @@
   .header__right-side {
     display: none;
   }
+
+  .icon-bars {
+    display: inline;
+  }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -51,7 +55,7 @@
     justify-content: flex-start;
   }
 
-
+  
 }
 
 @media only screen and (max-width: 600px) {

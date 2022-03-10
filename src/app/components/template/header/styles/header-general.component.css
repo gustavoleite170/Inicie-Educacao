@@ -16,13 +16,16 @@ a {
 #header {
   position: fixed;
   z-index: 30;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   width: 100%;
   padding: 10px 25px;
   background-color: var(--ice-white);
   border-bottom: 1px solid var(--gray);
+}
+
+#header-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 @media only screen and (min-width: 1600px) {
