@@ -6,6 +6,7 @@ a {
   list-style-type: none;
   padding: 0px;
   text-decoration: none;
+  margin: 0;
 }
 
 .header__logo-img {

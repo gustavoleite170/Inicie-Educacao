@@ -5,20 +5,30 @@ a {
   text-transform: capitalize;
 }
 
-.icon-bars {
+.header__right-side__hamburger-icon__button {
   position: absolute;
+  z-index: 40;
+  top: -40px;
+  right: 15px;
+  border: solid 0px;
+  background-color: var(--ice-white);
+  opacity: 0;
+}
+
+.icon-bars {
   font-size: 36px;
   color: #303030;
   cursor: pointer;
   display: none;
-  z-index: 40;
-  top: -40px;
-  right: 15px;
 }
 
 @media only screen and (max-width: 1069px) {
   .icon-bars {
     display: inline;
+  }
+
+  .header__right-side__hamburger-icon__button {
+    opacity: 1;
   }
 }
 
@@ -55,22 +65,42 @@ a {
   justify-content: center;
 }
 
+.header__right-side__hamburguer__menu-container-wrapper.expanded .header__right-side__hamburguer__menu-container {
+  transform: translateX(0);
+}
+
+.header__right-side__hamburguer__menu-container-wrapper.expanded .menu-container-wrapper__overlay {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.menu-container-wrapper__overlay {
+  will-change: opacity;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: #0005134d;
+  z-index: 99;
+
+  opacity: 0;
+  transition: 0.2s ease;
+  pointer-events: none;
+}
+
 .header__right-side__hamburguer__menu-container {
+  will-change: transform;
   position: absolute;
   width: 280px;
   height: 100vh;
   top: 0;
-  right: -280px;
-  background: #ffffff;
+  right: 0;
+  transform: translateX(280px);
+  background: #fff;
   z-index: 100;
 
-  transition: all 0.5s;
-}
-
-.header__right-side__hamburger-icon:hover
-  ~ .header__right-side__hamburguer__menu-container,
-.header__right-side__hamburguer__menu-container:hover {
-  right: 0;
+  transition: 0.3s ease;
 }
 
 .header__right-side__hamburguer__menu-logo-and-lang {
@@ -105,8 +135,38 @@ a {
   align-items: center;
 }
 
-.header__hamburguer__menu__first:nth-child(3),
-.header__hamburguer__menu__toggle__1,
+.header__hamburguer__menu {
+  cursor: pointer;
+  user-select: none;
+}
+
+.header__hamburguer__menu__first,
+.header__hamburguer__menu__second__ {
+  height: 45px;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+.header__hamburguer__menu__toggle:hover {
+  background: #f4f4f4 !important;
+}
+
+.icon-angle-down::before {
+  will-change: transform;
+  transition: 0.3s ease;
+  display: block;
+}
+
+.header__hamburguer__menu__toggle.expanded .icon-angle-down::before,
+.header__hamburguer__menu__second__.expanded .icon-angle-down::before {
+  transform: rotate(180deg);
+}
+
+.header__hamburguer__menu__second:hover, 
+.header__hamburguer__menu__second__:hover {
+  background: #fafafa !important;
+}
+
 .header__hamburguer__menu__toggle,
 .header__hamburguer__menu__toggle__,
 .header__hamburguer__menu__second,
@@ -115,6 +175,7 @@ a {
 .header__hamburguer__socials {
   padding: 10px 14.21px 10px 20px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
 }
 
 .header__hamburguer__socials {
@@ -123,4 +184,3 @@ a {
   width: 100%;
   justify-content: center;
 }
-
