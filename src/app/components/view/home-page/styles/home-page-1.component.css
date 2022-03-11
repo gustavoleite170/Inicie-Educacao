@@ -94,6 +94,12 @@
   color: #303030;
 }
 
+@media only screen and (max-width: 1200px) {
+  .presentation.max-width-1200px {
+    padding-top: 120px;
+  }
+}
+
 @media only screen and (max-width: 1000px) {
   .presentation__briefing__form,
   .presentation__briefing__image {
@@ -126,6 +132,12 @@
     text-align: center;
     font: 700 16px/16.2px 'Open Sans', sans-serif;
     color: #303030;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .presentation.max-width-1200px {
+    padding-top: 90px;
   }
 }
 

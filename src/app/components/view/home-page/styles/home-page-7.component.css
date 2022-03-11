@@ -37,6 +37,12 @@
   align-items: center;
 }
 
+@media only screen and (max-width: 1200px) {
+  .clients {
+    padding: 50px 80px;
+  }
+}
+
 @media only screen and (max-width: 750px) {
   .clients__header__title {
     font-size: 34px;
@@ -44,6 +50,12 @@
 
   .clients__header__explanation {
     font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .clients {
+    padding: 25px 80px;
   }
 }
 

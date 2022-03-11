@@ -132,16 +132,28 @@
   }
 } /* To prevent bugs on mobile devices when touching menu options*/
 
+@media only screen and (max-width: 1200px) {
+  .blog {
+    padding: 50px 80px;
+  }
+}
+
 @media only screen and (max-width: 750px) {
   .blog__header__title {
     color: #303030;
     font: 800 34px/1.2 'Open Sans', Sans-serif;
   }
-  
+
   .blog__header__explanation {
     position: relative;
     color: #06092d;
     font: 400 16px/1.7 'Open Sans', sans-serif;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .blog {
+    padding: 25px 80px;
   }
 }
 
