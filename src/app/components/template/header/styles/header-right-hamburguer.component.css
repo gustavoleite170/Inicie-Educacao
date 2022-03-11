@@ -137,8 +137,17 @@ a {
   pointer-events: none;
 }
 
-.header__hamburguer__menu__second__ {
+.header__hamburguer__menu__second__,
+.header__hamburguer__menu__second__sub,
+.header__hamburguer__menu__second__sub-box {
   pointer-events: auto;
+  z-index: 200;
+}
+
+.header__hamburguer__menu__toggle:hover ~ .header__hamburguer__menu__second-box,
+.header__hamburguer__menu__toggle__:hover
+  ~ .header__hamburguer__menu__second__sub-box {
+  height: 90px;
 }
 
 .header__hamburguer__menu__toggle__1:hover
@@ -148,10 +157,4 @@ a {
 
 .header__hamburguer__menu__second-box:hover {
   height: 225px;
-}
-
-.header__hamburguer__menu__toggle:hover ~ .header__hamburguer__menu__second-box,
-.header__hamburguer__menu__toggle__:hover
-  ~ .header__hamburguer__menu__second__sub-box {
-  height: 90px;
 }
