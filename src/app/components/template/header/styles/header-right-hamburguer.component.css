@@ -95,15 +95,18 @@ a {
 }
 
 .header__hamburguer__menu__toggle,
-.header__hamburguer__menu__toggle__ {
+.header__hamburguer__menu__toggle__1,
+.header__hamburguer__menu__toggle__{
   width: 100%;
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .header__hamburguer__menu__first:nth-child(3),
-.header__hamburguer__menu__first > .header__hamburguer__menu__toggle,
+.header__hamburguer__menu__toggle__1,
+.header__hamburguer__menu__toggle,
 .header__hamburguer__menu__toggle__,
 .header__hamburguer__menu__second,
 .header__hamburguer__menu__second__sub {
@@ -111,15 +114,34 @@ a {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.header__hamburguer__menu__second-box,
-.header__hamburguer__menu__second__sub-box {
-  display: none;
+.header__hamburguer__menu__second-box:nth-child(n),
+.header__hamburguer__menu__second__sub-box:nth-child(n) {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+.header__hamburguer__menu__second-box{
+  pointer-events: none;
+}
+
+.header__hamburguer__menu__second__{
+  pointer-events: auto;
+}
+
+.header__hamburguer__menu__toggle__1:hover ~ .header__hamburguer__menu__second-box {
+  height: 135px;
+}
+
+.header__hamburguer__menu__second-box:hover{
+  height: 225px;
 }
 
 .header__hamburguer__menu__toggle:hover ~ .header__hamburguer__menu__second-box,
-.header__hamburguer__menu__second-box:hover,
-.header__hamburguer__menu__toggle__:hover
-  ~ .header__hamburguer__menu__second__sub-box,
-.header__hamburguer__menu__second__sub-box:hover {
-  display: inline;
+.header__hamburguer__menu__toggle__:hover ~ .header__hamburguer__menu__second__sub-box {
+  height: 90px;
 }
+
+
+
+
