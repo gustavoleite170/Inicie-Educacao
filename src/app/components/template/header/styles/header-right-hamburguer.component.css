@@ -151,17 +151,6 @@ a {
   background: #f4f4f4 !important;
 }
 
-.icon-angle-down::before {
-  will-change: transform;
-  transition: 0.3s ease;
-  display: block;
-}
-
-.header__hamburguer__menu__toggle.expanded .icon-angle-down::before,
-.header__hamburguer__menu__second__.expanded .icon-angle-down::before {
-  transform: rotate(180deg);
-}
-
 .header__hamburguer__menu__second:hover, 
 .header__hamburguer__menu__second__:hover {
   background: #fafafa !important;

@@ -25,8 +25,6 @@ export class HeaderComponent implements OnInit {
     const $menuFirst = $event.currentTarget.parentElement;
     const menuFirstHeight = $menuFirst.scrollHeight;
 
-    $menuToggle.classList.toggle('expanded')
-    
     if ($menuFirst.clientHeight === menuFirstHeight) {
       $menuFirst.style.height = '45px';
       $menuToggle.style.background = '#fff';
@@ -35,7 +33,6 @@ export class HeaderComponent implements OnInit {
       setTimeout(() => $menuFirst.style.height = 'unset', 200)
       $menuToggle.style.background = '#f4f4f4';
     }
-
   }
 
   expandSecondSubmenu ($event) {
