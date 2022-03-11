@@ -22,7 +22,8 @@ a {
   }
 }
 
-.icon-angle-down {
+.icon-angle-down,
+.icon-angle-up {
   color: #253d4a;
   line-height: 20px;
   font-size: 18px;
@@ -96,6 +97,8 @@ a {
 
 .header__hamburguer__menu__toggle,
 .header__hamburguer__menu__toggle__1,
+.header__hamburguer__menu__second,
+.header__hamburguer__menu__second__sub,
 .header__hamburguer__menu__toggle__ {
   width: 100%;
   position: relative;
@@ -109,9 +112,18 @@ a {
 .header__hamburguer__menu__toggle,
 .header__hamburguer__menu__toggle__,
 .header__hamburguer__menu__second,
-.header__hamburguer__menu__second__sub {
+.header__hamburguer__menu__second__sub,
+.header__hamburguer__search-box,
+.header__hamburguer__socials {
   padding: 10px 14.21px 10px 20px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.header__hamburguer__socials {
+  display: flex;
+  gap: 6px;
+  width: 100%;
+  justify-content: center;
 }
 
 .header__hamburguer__menu__second-box:nth-child(n),
