@@ -113,6 +113,7 @@ a {
   transform: translateX(280px);
   background: #fff;
   z-index: 100;
+  overflow: auto;
 
   transition: 0.3s ease;
 }
