@@ -119,14 +119,24 @@
   </div>
 
   <section class="header__right-side__hamburger">
-    <a href="#" class="header__right-side__hamburger-icon" (click)="toggleHamburguerMenu($event, menuWrapper)">
+    <a
+      href="#"
+      class="header__right-side__hamburger-icon"
+      (click)="toggleHamburguerMenu($event, menuWrapper)"
+    >
       <button class="header__right-side__hamburger-icon__button">
         <div class="icon-bars"></div>
       </button>
     </a>
-    
-    <div #menuWrapper class="header__right-side__hamburguer__menu-container-wrapper" >
-      <div class="menu-container-wrapper__overlay" (click)="toggleHamburguerMenu($event, menuWrapper)"></div>
+
+    <div
+      #menuWrapper
+      class="header__right-side__hamburguer__menu-container-wrapper"
+    >
+      <div
+        class="menu-container-wrapper__overlay"
+        (click)="toggleHamburguerMenu($event, menuWrapper)"
+      ></div>
 
       <div class="header__right-side__hamburguer__menu-container">
         <div class="header__right-side__hamburguer__menu-logo-and-lang">
@@ -153,11 +163,14 @@
         </div>
         <nav class="header__hamburguer__menu">
           <ul>
-            <li class="header__hamburguer__menu__first">
-              <div class="header__hamburguer__menu__toggle" (click)="expandSubmenu($event)">
+            <li #firstWrapper class="header__hamburguer__menu__first">
+              <div
+                class="header__hamburguer__menu__toggle"
+                (click)="expandSubmenu($event, firstArrow)"
+              >
                 <a>Como Ajudamos</a>
                 <div class="icon-angle-down__wrapper">
-                  <div class="icon-angle-down"></div>
+                  <div #firstArrow class="icon-angle-down"></div>
                 </div>
               </div>
 
@@ -167,10 +180,13 @@
                 </li>
 
                 <li class="header__hamburguer__menu__second__">
-                  <div class="header__hamburguer__menu__toggle__" (click)="expandSubmenu($event)">
+                  <div
+                    class="header__hamburguer__menu__toggle__"
+                    (click)="expandSubmenu($event, secondArrow, firstWrapper)"
+                  >
                     <a href="#">Inicie Conteúdo</a>
                     <div class="icon-angle-down__wrapper">
-                      <div class="icon-angle-down"></div>
+                      <div #secondArrow class="icon-angle-down"></div>
                     </div>
                   </div>
                   <ul class="header__hamburguer__menu__second__sub-box">
@@ -184,10 +200,13 @@
                 </li>
 
                 <li class="header__hamburguer__menu__second__">
-                  <div class="header__hamburguer__menu__toggle__" (click)="expandSubmenu($event)">
+                  <div
+                    class="header__hamburguer__menu__toggle__"
+                    (click)="expandSubmenu($event, thirdArrow, firstWrapper)"
+                  >
                     <a href="#">Inicie Plataforma </a>
                     <div class="icon-angle-down__wrapper">
-                      <div class="icon-angle-down"></div>
+                      <div #thirdArrow class="icon-angle-down"></div>
                     </div>
                   </div>
                   <ul class="header__hamburguer__menu__second__sub-box">
@@ -203,10 +222,13 @@
             </li>
 
             <li class="header__hamburguer__menu__first">
-              <div class="header__hamburguer__menu__toggle" (click)="expandSubmenu($event)">
+              <div
+                class="header__hamburguer__menu__toggle"
+                (click)="expandSubmenu($event, fourthArrow)"
+              >
                 <a>A Inicie</a>
                 <div class="icon-angle-down__wrapper">
-                  <div class="icon-angle-down"></div>
+                  <div #fourthArrow class="icon-angle-down"></div>
                 </div>
               </div>
               <ul class="header__hamburguer__menu__second-box">
@@ -224,10 +246,13 @@
             </li>
 
             <li class="header__hamburguer__menu__first">
-              <div class="header__hamburguer__menu__toggle" (click)="expandSubmenu($event)">
+              <div
+                class="header__hamburguer__menu__toggle"
+                (click)="expandSubmenu($event, fithArrow)"
+              >
                 <a>Contato</a>
                 <div class="icon-angle-down__wrapper">
-                  <div class="icon-angle-down"></div>
+                  <div #fithArrow class="icon-angle-down"></div>
                 </div>
               </div>
               <ul class="header__hamburguer__menu__second-box">

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -7,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _element: ElementRef) {
+  }
 
   ngOnInit(): void {
   }
@@ -16,10 +17,12 @@ export class HeaderComponent implements OnInit {
     $event.stopPropagation()
 
     $wrapper.classList.toggle('expanded');
+    const $body = this._element.nativeElement.closest('body');
+    $body.classList.toggle('menuOpen');
   }
 
-  expandSubmenu ($event) {
-    /* $event.stopPropagation() */
+  expandSubmenu ($event, arrowIcon, $wrapper?) {
+    $event.stopPropagation()
 
     const $menuToggle = $event.currentTarget;
     const $menuFirst = $event.currentTarget.parentElement;
@@ -30,27 +33,21 @@ export class HeaderComponent implements OnInit {
       $menuToggle.style.background = '#fff';
     } else {
       $menuFirst.style.height = menuFirstHeight + 'px';
-      setTimeout(() => $menuFirst.style.height = 'unset', 200)
       $menuToggle.style.background = '#f4f4f4';
-    }
-  }
-
-  expandSecondSubmenu ($event) {
-    /* $event.stopPropagation() */
-
-    const $menuFirst = $event.currentTarget.parentElement;
-    const $menuSecond = $event.currentTarget.parentElement;
-    const menuFirstHeight = $menuFirst.scrollHeight + $menuSecond.scrollHeight;
-    
-    
-    if ($menuFirst.clientHeight === menuFirstHeight) {
-      $menuFirst.style.height = '45px';
-      $event.currentTarget.style.background = '#fff';
-    } else {
-      $menuFirst.style.height = menuFirstHeight + 'px';
-      $event.currentTarget.style.background = '#f4f4f4';
+      setTimeout(() => $menuFirst.style.height = 'unset', 300)
+      setTimeout(() => $menuFirst.style.height = menuFirstHeight + 'px', 350)
     }
 
+    arrowIcon.classList.toggle('active')
+
+    if ($wrapper) {
+      $wrapper.style.height = 'unset';
+
+      setTimeout(() => {
+        const wrapperHeight = $wrapper.scrollHeight;
+        $wrapper.style.height = wrapperHeight + 'px';
+      }, 350)
+    }
   }
 
 }

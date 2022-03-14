@@ -37,6 +37,18 @@ a {
   line-height: 20px;
   font-size: 18px;
   font-weight: 800;
+
+  will-change: transform;
+}
+
+.icon-angle-down::before {
+  display: block;
+  will-change: transform;
+  transition: 0.3s ease;
+}
+
+.icon-angle-down.active::before {
+  transform: rotate(180deg);
 }
 
 .icon-angle-down::after {
@@ -65,11 +77,13 @@ a {
   justify-content: center;
 }
 
-.header__right-side__hamburguer__menu-container-wrapper.expanded .header__right-side__hamburguer__menu-container {
+.header__right-side__hamburguer__menu-container-wrapper.expanded
+  .header__right-side__hamburguer__menu-container {
   transform: translateX(0);
 }
 
-.header__right-side__hamburguer__menu-container-wrapper.expanded .menu-container-wrapper__overlay {
+.header__right-side__hamburguer__menu-container-wrapper.expanded
+  .menu-container-wrapper__overlay {
   opacity: 1;
   pointer-events: all;
 }
@@ -151,7 +165,7 @@ a {
   background: #f4f4f4 !important;
 }
 
-.header__hamburguer__menu__second:hover, 
+.header__hamburguer__menu__second:hover,
 .header__hamburguer__menu__second__:hover {
   background: #fafafa !important;
 }
@@ -164,7 +178,6 @@ a {
 .header__hamburguer__socials {
   padding: 10px 14.21px 10px 20px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-
 }
 
 .header__hamburguer__socials {
